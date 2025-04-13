@@ -9,7 +9,7 @@ function App() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")',
+            backgroundImage: 'url("/cookie-primeira-imagem.png")',
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -18,13 +18,13 @@ function App() {
         <nav className="relative z-10 flex justify-between items-center px-6 py-4">
           <div className="flex items-center">
             <img 
-              src="https://raw.githubusercontent.com/stackblitz/stackblitz-images/main/polyana-moraes-logo-circular.png" 
+              src="/logo-marca.jpg"   
               alt="Polyana Moraes Logo" 
               className="h-20 w-20"
             />
           </div>
           <div className="flex gap-6 text-white">
-            <a href="#menu" className="hover:text-pink-200 transition">Menu</a>
+            <a href="#menu" className="hover:text-pink-200 transition">Especialidades</a>
             <a href="#sobre" className="hover:text-pink-200 transition">Nossa História</a>
             <a href="#contato" className="hover:text-pink-200 transition">Contato</a>
           </div>
@@ -35,11 +35,11 @@ function App() {
           <p className="text-xl text-white mb-4">Cookies & Doces</p>
           <p className="text-lg text-white mb-8">Sabores que conquistam corações</p>
           <a 
-            href="#menu" 
+            href="https://instadelivery.com.br/polyanamoraescookies" 
             className="bg-pink-500 text-white px-8 py-3 rounded-full hover:bg-pink-600 transition"
           >
             Ver Cardápio
-          </a>
+          </a>  
         </div>
       </header>
 
@@ -49,29 +49,29 @@ function App() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
             {
-              name: "Cookies Artesanais",
-              image: "https://images.unsplash.com/photo-1605243614624-277f48f46d52?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+              name: "Torta de Pistache",
+              image: "/torta.jpg",
               price: "R$ 15,90",
               description: "Cookies crocantes por fora e macios por dentro, recheados com gotas de chocolate belga. Perfeitos para qualquer momento do dia."
             },
             {
-              name: "Torta Gelada de Morango",
-              image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+              name: "Sobremesa surpresa de uva verde",
+              image: "uva-sobremessa.jpg",
               price: "R$ 79,90",
               description: "Uma deliciosa combinação de massa amanteigada, creme suave e morangos frescos. Uma sobremesa refrescante e irresistível."
             },
             {
-              name: "Bolo Red Velvet",
-              image: "https://images.unsplash.com/photo-1586788680399-b6624513f9b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+              name: "Fatia de ninho com morango",
+              image: "torta-ninho.jpg",
               price: "R$ 19,90",
-              description: "Fatia generosa do nosso famoso bolo red velvet com cobertura de cream cheese. Uma explosão de sabor em cada garfada."
+              description: "Fatia generosa do nosso famoso com cobertura de cream cheese. Uma explosão de sabor em cada garfada."
             },
           ].map((product, index) => (
             <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
               <img 
                 src={product.image} 
                 alt={product.name}
-                className="w-full h-48 object-cover"
+                className="w-full object-cover aspect-[1/1]"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
@@ -119,11 +119,11 @@ function App() {
             <div className="space-y-6">
               <div className="flex items-center gap-3">
                 <MapPin className="text-pink-500" />
-                <p>Rua das Flores, 123 - São Paulo, SP</p>
+                <p>Rua Santo Padre Pio, 21 Jardim Olimpia <br /> Alfenas, MG</p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-pink-500" />
-                <p>(11) 99999-9999</p>
+                <p>(35) 99894-4112</p>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="text-pink-500" />
@@ -133,14 +133,11 @@ function App() {
             <div className="space-y-4">
               <h3 className="text-xl font-serif">Siga-nos</h3>
               <div className="flex gap-4">
-                <a href="#" className="text-pink-500 hover:text-pink-600 transition">
+                <a href="https://www.instagram.com/polyanamoraescookies?igsh=YjFpeGtwYmw2MHE0" className="text-pink-500 hover:text-pink-600 transition">
                   <Instagram size={24} />
                 </a>
-                <a href="#" className="text-pink-500 hover:text-pink-600 transition">
-                  <Facebook size={24} />
-                </a>
                 <a 
-                  href="https://wa.me/5511999999999" 
+                  href="https://api.whatsapp.com/send?phone=35998944112" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-green-500 hover:text-green-600 transition"
@@ -168,7 +165,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-pink-500 text-white py-6 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <p>© 2024 Polyana Moraes Cookies & Doces. Todos os direitos reservados.</p>
+          <p>© 2025 Polyana Moraes Cookies & Doces. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
