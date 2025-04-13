@@ -45,7 +45,7 @@ function App() {
 
       {/* Featured Products */}
       <section id="menu" className="py-20 px-6">
-        <h2 className="text-3xl font-serif text-center mb-12">Nossas Especialidades</h2>
+        <h2 className="text-3xl font-serif text-center mb-12">Especialidades</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
             {
