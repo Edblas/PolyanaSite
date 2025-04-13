@@ -20,11 +20,11 @@ function App() {
             <img 
               src="/logo-marca.jpg"   
               alt="Polyana Moraes Logo" 
-              className="h-20 w-20"
+              className="size-10"
             />
           </div>
           <div className="flex gap-6 text-white">
-            <a href="#menu" className="hover:text-pink-200 transition">Especialidades</a>
+            <a href="#menu" className="hover:text-pink-200 transition">Doces</a>
             <a href="#sobre" className="hover:text-pink-200 transition">Nossa História</a>
             <a href="#contato" className="hover:text-pink-200 transition">Contato</a>
           </div>
